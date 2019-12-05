@@ -25,7 +25,7 @@ public class MoveSphereSystem : JobComponentSystem
     {
         var job = new MoveSphereJob()
         {
-            DeltaTime = Time.deltaTime,
+            DeltaTime = Time.DeltaTime,
         };
         return job.Schedule(this, inputDeps);
     }
